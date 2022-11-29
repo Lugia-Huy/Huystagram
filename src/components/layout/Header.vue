@@ -37,9 +37,9 @@
                         </a>
                     </div>
                     <div class="btn-redirect">
-                        <a aria-label="Tin nhắn trực tiếp - Liên kết đến 0 thông báo mới" class="xWeGp"
-                            href="/direct/inbox/" tabindex="0"><svg aria-label="Messenger" class="message-icon"
-                                color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24">
+                        <a aria-label="Tin nhắn trực tiếp - Thông báo mới" class="xWeGp" href="/direct/inbox/"
+                            tabindex="0"><svg aria-label="Messenger" class="message-icon" color="#262626" fill="#262626"
+                                height="24" role="img" viewBox="0 0 24 24" width="24">
                                 <path
                                     d="M12.003 2.001a9.705 9.705 0 110 19.4 10.876 10.876 0 01-2.895-.384.798.798 0 00-.533.04l-1.984.876a.801.801 0 01-1.123-.708l-.054-1.78a.806.806 0 00-.27-.569 9.49 9.49 0 01-3.14-7.175 9.65 9.65 0 0110-9.7z"
                                     fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="1.739">
@@ -91,9 +91,9 @@
                     </div>
                     <div class="btn-redirect">
                         <a href="/accounts/" class="_2dbep qNELH" data-testid="user-avatar-link" role="link"
-                            tabindex="0" style="width: 24px; height: 24px;"><img alt="Ảnh đại diện của quanghuy_neyugn"
-                                class="icon-user" crossorigin="anonymous" data-testid="user-avatar" draggable="false"
-                                src="@/assets/images/user.jpg"></a>
+                            tabindex="0" style="width: 24px; height: 24px;"><img alt="Ảnh đại diện" class="icon-user"
+                                crossorigin="anonymous" data-testid="user-avatar" draggable="false"
+                                src="@/assets/images/ava_user.jpg" style="border-radius: 50%;"></a>
                     </div>
                 </div>
             </div>
@@ -139,7 +139,7 @@ export default {
     padding: 5px 20px;
 }
 
-.nav-brand .nav-brand-space{
+.nav-brand .nav-brand-space {
     align-items: center;
     color: #00376b;
     display: flex;

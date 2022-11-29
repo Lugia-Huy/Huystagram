@@ -4,15 +4,15 @@
             <div class="timeline">
                 <div class="container">
                     <div class="stories-container">
-                        <Avatar :size="56" />
-                        <Avatar :size="56" />
-                        <Avatar :size="56" />
-                        <Avatar :size="56" />
-                        <Avatar :size="56" />
-                        <Avatar :size="56" />
-                        <Avatar :size="56" />
-                        <Avatar :size="56" />
-                        <Avatar :size="56" />
+                        <Avatar :size="56" :src="require('@/assets/images/ava1.jpg')"/>
+                        <Avatar :size="56" :src="require('@/assets/images/ava2.jpg')"/>
+                        <Avatar :size="56" :src="require('@/assets/images/ava3.jpg')"/>
+                        <Avatar :size="56" :src="require('@/assets/images/ava4.jpg')"/>
+                        <Avatar :size="56" :src="require('@/assets/images/ava5.jpg')"/>
+                        <Avatar :size="56" :src="require('@/assets/images/ava6.jpg')"/>
+                        <Avatar :size="56" :src="require('@/assets/images/ava7.jpg')"/>
+                        <Avatar :size="56" :src="require('@/assets/images/ava8.jpg')"/>
+                        <Avatar :size="56" :src="require('@/assets/images/ava9.jpg')"/>
                     </div>
                 </div>
                 <Post />
@@ -22,14 +22,14 @@
             <div class="sidebar">
                 <div class="sidebar-profile">
                     <div class="head-avatar">
-                        <img src="@/assets/images/user.jpg" alt="avatar" width="56px" height="56px" />
+                        <img src="@/assets/images/ava_user.jpg" alt="avatar" width="56px" height="56px" />
                     </div>
                     <div class="sidebar-name">
                         <div class="sidebar-username">
-                            <CustomText tag="b" size="large">username</CustomText>
+                            <CustomText tag="b" size="large">quanghuy_neyugn</CustomText>
                         </div>
                         <div class="sidebar-displayname">
-                            <CustomText size="normal">displayname</CustomText>
+                            <CustomText size="normal">Yuh Gnauq Hnaht Neyugn</CustomText>
                         </div>
                     </div>
                     <div class="sidebar-switch">
@@ -48,14 +48,14 @@
                 </div>
                 <div class="sidebar-sug-profile">
                     <div class="head-avatar">
-                        <img src="@/assets/images/user.jpg" alt="avatar" width="32px" height="32px" />
+                        <img src="@/assets/images/ava10.jpg" alt="avatar" width="32px" height="32px" />
                     </div>
                     <div class="sidebar-name">
                         <div class="sidebar-username">
-                            <CustomText tag="b" size="large">username</CustomText>
+                            <CustomText tag="b" size="large">phqh__</CustomText>
                         </div>
                         <div class="sidebar-displayname">
-                            <CustomText size="normal">displayname</CustomText>
+                            <CustomText size="normal">following you</CustomText>
                         </div>
                     </div>
                     <div class="sidebar-switch">
@@ -66,14 +66,14 @@
                 </div>
                 <div class="sidebar-sug-profile">
                     <div class="head-avatar">
-                        <img src="@/assets/images/user.jpg" alt="avatar" width="32px" height="32px" />
+                        <img src="@/assets/images/ava11.jpg" alt="avatar" width="32px" height="32px" />
                     </div>
                     <div class="sidebar-name">
                         <div class="sidebar-username">
-                            <CustomText tag="b" size="large">username</CustomText>
+                            <CustomText tag="b" size="large">may__lily</CustomText>
                         </div>
                         <div class="sidebar-displayname">
-                            <CustomText size="normal">displayname</CustomText>
+                            <CustomText size="normal">following you</CustomText>
                         </div>
                     </div>
                     <div class="sidebar-switch">
@@ -84,14 +84,14 @@
                 </div>
                 <div class="sidebar-sug-profile">
                     <div class="head-avatar">
-                        <img src="@/assets/images/user.jpg" alt="avatar" width="32px" height="32px" />
+                        <img src="@/assets/images/ava12.jpg" alt="avatar" width="32px" height="32px" />
                     </div>
                     <div class="sidebar-name">
                         <div class="sidebar-username">
-                            <CustomText tag="b" size="large">username</CustomText>
+                            <CustomText tag="b" size="large">dkve_ki</CustomText>
                         </div>
                         <div class="sidebar-displayname">
-                            <CustomText size="normal">displayname</CustomText>
+                            <CustomText size="normal">following you</CustomText>
                         </div>
                     </div>
                     <div class="sidebar-switch">
@@ -166,7 +166,7 @@ export default {
 .stories-container {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 5rem;
+    grid-auto-columns: 4.5rem;
     grid-gap: 0.5rem;
     padding: 0px 10px;
 }

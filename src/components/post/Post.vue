@@ -68,18 +68,18 @@
     <!-- view count -->
 
     <div class="view-count section">
-      <custom-text tag="b">1.345 beğenme</custom-text>
+      <custom-text tag="b">1.345 likes</custom-text>
     </div>
 
     <!-- comment list -->
     <div class="view-comment section">
-      <custom-text tag="b">Richard Harlow</custom-text>
+      <custom-text tag="b">quanghuy_neyugn</custom-text>
       blind eye works
     </div>
     <!-- datetime -->
     <div class="view-datetime section">
       <div class="view-datetime text">
-        <CustomText tag="b" size="xsmall">2 HOURS AGO</CustomText>
+        <CustomText tag="b" size="xsmall">2 DAYS AGO</CustomText>
       </div>
     </div>
     <!-- comment form -->

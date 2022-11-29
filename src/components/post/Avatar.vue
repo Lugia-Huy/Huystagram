@@ -1,10 +1,10 @@
 <template>
-  <div>
-    <figure class="avatar">
+  <button class="ava-btn">
+    <div class="avatar">
       <img :src="src" :alt="alt" :width="size" :height="size" />
-    </figure>
+    </div>
     <p>username</p>
-  </div>
+  </button>
 </template>
 
 <script>
@@ -26,6 +26,22 @@ export default {
 </script>
 
 <style scoped>
+.ava-btn{
+  align-items: center;
+  background-position: 0px 0px;
+  display: flex;
+  flex-direction: column;
+  font-family: -apple-system;
+  padding: 0px 0px;
+  text-align: center;
+  border: hidden;
+  background-color: #ffffff;
+}
+
+.ava-btn:focus {
+  outline: none;
+}
+
 .avatar {
   display: inline-flex;
   padding: 2px;
