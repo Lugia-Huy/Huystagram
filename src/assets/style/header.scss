@@ -1,0 +1,29 @@
+.nav-header {
+    align-items: center;
+    background-color: #ffffff;
+    color: #262626;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    line-height: 18px;
+
+    .nav-header-content {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding: 0px 20px;
+
+        .nav-brand {
+            align-items: center;
+            color: #00376b;
+            display: flex;
+            justify-content: flex-start;
+
+            .homepage-logo img {
+                max-width: 135px;
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+    }
+}
