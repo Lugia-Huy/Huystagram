@@ -2,11 +2,9 @@
     <nav class="nav-header">
         <div class="nav-header-content">
             <div class="nav-brand">
-                <div class="nav-brand-space">
-                    <a class="homepage-logo" href="/">
-                        <img src="@/assets/images/logo.png" alt="logo-brand">
-                    </a>
-                </div>
+                <a class="homepage-logo" href="/">
+                    <img src="@/assets/images/logo.png" alt="logo-brand">
+                </a>
             </div>
             <div class="nav-search">
                 <input aria-label="Phần nhập nội dung tìm kiếm" autocapitalize="none" class="search-input"
@@ -90,10 +88,10 @@
                             </svg></a>
                     </div>
                     <div class="btn-redirect">
-                        <a href="/accounts/" class="_2dbep qNELH" data-testid="user-avatar-link" role="link"
+                        <router-link to="/profile" class="_2dbep qNELH" data-testid="user-avatar-link" role="link"
                             tabindex="0" style="width: 24px; height: 24px;"><img alt="Ảnh đại diện" class="icon-user"
                                 crossorigin="anonymous" data-testid="user-avatar" draggable="false"
-                                src="@/assets/images/ava_user.jpg" style="border-radius: 50%;"></a>
+                                src="@/assets/images/ava_user.jpg" style="border-radius: 50%;"></router-link>
                     </div>
                 </div>
             </div>
@@ -137,16 +135,29 @@ export default {
     display: flex;
     justify-content: center;
     padding: 5px 20px;
+    flex-basis: auto;
+    width: 975px;
+    height: 60px;
 }
 
-.nav-brand .nav-brand-space {
+.nav-brand {
     align-items: center;
     color: #00376b;
     display: flex;
-    min-width: 334px;
-    min-height: 36px;
+    max-width: 334px;
+    height: 36px;
+    flex: 1 0 auto;
     justify-content: flex-start;
-    z-index: 2;
+}
+
+.nav-brand-space {
+    align-items: center;
+    color: #00376b;
+    display: flex;
+    max-width: 334px;
+    height: 36px;
+    flex: 0 0 auto;
+    justify-content: flex-end;
 }
 
 .homepage-logo img {
@@ -164,8 +175,9 @@ export default {
     display: flex;
     flex-direction: column;
     font-weight: 300;
-    min-height: 36px;
-    min-width: 268px;
+    height: 36px;
+    max-width: 268px;
+    flex: 1 0 auto;
     justify-content: center;
     padding: 0px 16px;
     text-align: left;
@@ -212,7 +224,8 @@ export default {
     font-size: 14px;
     justify-content: flex-end;
     line-height: 18px;
-    min-width: 334px;
+    max-width: 334px;
+    flex: 0 0 auto;
 }
 
 .nav-redirect .group-redirect {

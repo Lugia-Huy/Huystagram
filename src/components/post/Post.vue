@@ -117,6 +117,9 @@ export default {
       notPost: false,
     };
   },
+  props: {
+    post: Object
+  },
   methods: {
     openOption(event) {
       alert('Feature still in processing, it will update soon!')

@@ -20,7 +20,7 @@
                 <Post />
             </div>
             <div class="sidebar">
-                <div class="sidebar-profile">
+                <div class="sidebar-profile" @click="moveToProfile()">
                     <div class="head-avatar">
                         <img src="@/assets/images/ava_user.jpg" alt="avatar" width="56px" height="56px" />
                     </div>
@@ -105,14 +105,21 @@
     </section>
 </template>
 <script>
-import Post from './post/Post.vue'
-import Avatar from './post/Avatar.vue'
+import Post from '../post/Post.vue'
+import Avatar from '../post/Avatar.vue'
 export default {
     name: 'Main',
     components: {
         Post,
         Avatar
-    }
+    },
+    methods: {
+        moveToProfile(event){
+            if(event){
+                this.$router.push('/profile');
+            }
+        }
+    },
 }
 </script>
 
