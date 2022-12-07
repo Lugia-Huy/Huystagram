@@ -1,9 +1,9 @@
 <template>
   <button class="ava-btn">
     <div class="avatar">
-      <img :src="src" :alt="alt" :width="size" :height="size" />
+      <img :src="src" :alt="alt" :width="size" :height="size" loading="lazy"/>
     </div>
-    <p>username</p>
+    <p class="name-display">{{username}}</p>
   </button>
 </template>
 
@@ -13,7 +13,7 @@ export default {
   props: {
     src: {
       type: String,
-      default: "http://localhost:8080/img/user.dbcce010.jpg",
+      default: "@/assets/images/ava_user.jpg",
     },
     alt: {
       type: String,
@@ -21,6 +21,10 @@ export default {
     size: {
       type: Number,
     },
+    username:{
+      type: String,
+      default: "username",
+    }
   },
 };
 </script>
@@ -53,5 +57,12 @@ export default {
 
 .avatar img {
   border-radius: 50%;
+}
+
+.name-display{
+  width: 52px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 </style>
